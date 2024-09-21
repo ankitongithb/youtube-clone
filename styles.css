@@ -1,0 +1,224 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.user-profile img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Video Feed Styling */
+.video-feed {
+    margin-left: 220px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.video-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.video-card img {
+    width: 100%;
+    display: block;
+}
+
+.video-card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.video-card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Video Player Page Styling */
+.video-player {
+    margin: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.video-actions {
+    margin-bottom: 20px;
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-section button {
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.comment-section #commentsList {
+    margin-top: 20px;
+}
+
+/* Recommended Videos Styling */
+.recommended-videos {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 250px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+}
+
+.recommended-videos ul {
+    list-style: none;
+}
+
+.recommended-videos ul li {
+    margin-bottom: 10px;
+}
+
+.recommended-videos ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.recommended-videos ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Sidebar */
+#toggleSidebar {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #toggleSidebar {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+        position: fixed;
+        width: 200px;
+        z-index: 1000;
+        background-color: white;
+        top: 50px;
+        height: 100%;
+    }
+
+    .video-feed {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar Toggle Button for Mobile -->
+    <button id="toggleSidebar">☰</button>
+
+    <!-- Video Player Section -->
+    <main class="video-player">
+        <div class="video-container">
+            <video controls>
+                <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 id="videoTitle">CLONE OF A YOUTUBE</h1>
+            <p id="videoViews">1M views • 2 days ago</p>
+        </div>
+
+        <!-- Like/Dislike Section -->
+        <div class="video-actions">
+            <button id="likeBtn">👍 Like</button>
+            <button id="dislikeBtn">👎 Dislike</button>
+            <p id="likeCount">Likes: 0</p>
+            <p id="dislikeCount">Dislikes: 0</p>
+        </div>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+            <h3>Comments</h3>
+            <textarea id="commentInput" placeholder="Add a comment"></textarea>
+            <button id="postCommentBtn">Post Comment</button>
+            <div id="commentsList"></div>
+        </div>
+    </main>
+
+    <!-- Recommended Videos Sidebar -->
+    <aside class="recommended-videos">
+        <h3>Recommended Videos</h3>
+        <ul id="recommendedVideos"></ul>
+    </aside>
+
+    <script src="video.js"></script>
+</body>
+</html>

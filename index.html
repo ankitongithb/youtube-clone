@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Sidebar Toggle Button for Mobile -->
+    <button id="toggleSidebar">☰</button>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/120x40/FF0000/FFFFFF?text=YouTube+Clone" alt="YouTube Clone">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="user-profile">
+            <img src="https://via.placeholder.com/40" alt="User Profile">
+        </div>
+    </header>
+
+    <!-- Side Navigation -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Library</a></li>
+        </ul>
+    </aside>
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trending.html">Trending</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li><a href="library.html">Library</a></li>
+        </ul>
+    </aside>
+    
+    <!-- Video Feed -->
+    <main class="video-feed" id="videoFeed"></main>
+
+    <script src="scripts.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>
