@@ -5,7 +5,7 @@ const libraryVideos = [
         title: 'Library Video 1',
         views: '500K views',
         time: '1 week ago',
-        thumbnail: 'https://via.placeholder.com/250x150',
+        thumbnail: 'https://images.app.goo.gl/jVEyrMopD2TmDa7s6',
         videoUrl: 'video.html?id=1',
     },
     {
